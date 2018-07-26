@@ -1,0 +1,14 @@
+# 忽略目录
+.git
+.idea
+.package-lock.json
+package-lock.json
+/.idea
+node_modules/
+logs/
+dist/
+npm-debug.log
+.DS_Store
+sdk/node_modules/
+sdk/package-lock.json/
+*.zip

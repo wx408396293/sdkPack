@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bot easyOpenIM</title>
+</head>
+<body>
+
+<a href="javascript:void(0);" onclick="window.$easyOpenIM.start();">打开IM</a>
+<a href="javascript:void(0);" onclick="window.$easyOpenIM.remove();">删除IM</a>
+<a href="javascript:void(0);" onclick="window.$easyOpenIM.restart();">重启IM</a>
+
+
+<!-- 引入Bot平台客服JS代码 BEGIN -->
+<script src="http://127.0.0.1:5090/library/easyOpenIM/easyOpenIM.min.js"></script>
+<!-- 引入Bot平台客服JS代码 END -->
+<!-- 初始化方法 -->
+<script>
+    // 初始化方法
+    EasyOpenIM.init({
+        // 服务器地址（必须）
+        root: 'http://127.0.0.1:5090',
+        // 引入依赖资源（必须）
+        resource: false,
+        // 是否使用压缩资源
+        online: false,
+        // frame配置
+        frame: {
+            // 自定义title名称
+            title: '聊天窗口',
+            // 自定义width
+            width: '360px',
+            // 自定义height
+            height: '550px',
+            // 自定义right
+            right: '100px',
+            // 自定义bottom
+            bottom: '50px',
+            // 自定义margin
+            margin: '0 0 0 0',
+            // 自定义z-index
+            zIndex: '9999999',
+            layer: {
+                // 是否开启遮罩，默认关闭
+                show: true,
+            },
+        },
+        toolbar: {
+            // 是否开启工具栏，默认关闭
+            append: false,
+            // params参数（必须）
+            query: {
+                token: 'RobotBearer eyJ0eXBlIjoiSldUIiwiYWxnIjoiSFMyNTYifQ.eyJyb2JvdElkIjoiY2U1ZjBkODkwZDI0NDQ2NTllYmI2YmUyZjI0MzJiMjYiLCJ0ZW5hbnRJZCI6Ik1TWEZfWE1BIn0.LuIo1vgLqClISXm-H_sP4NwwDiAsPQa7gt1L9OLWcSA',
+            },
+        },
+    });
+</script>
+
+</body>
+</html>
